@@ -194,6 +194,7 @@ function App() {
                       />
                       <ListItemText
                         primary={todo.title}
+                        data-testid="task-text"
                         sx={{
                           textDecoration: todo.completed ? 'line-through' : 'none',
                           color: todo.completed ? 'text.secondary' : 'text.primary',
