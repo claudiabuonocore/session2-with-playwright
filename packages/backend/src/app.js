@@ -38,6 +38,11 @@ initialTodos.forEach(todo => {
 
 console.log('In-memory database initialized with sample data');
 
+// Health check route
+app.get('/', (req, res) => {
+  res.json({ status: 'ok', message: 'TODO API Server' });
+});
+
 // API Routes
 app.get('/api/todos', (req, res) => {
   try {
