@@ -49,7 +49,7 @@ module.exports = defineConfig({
   webServer: [
     {
       command: 'cd packages/backend && npm start',
-      port: 5000,
+      port: 3030,
       timeout: 120 * 1000,
       reuseExistingServer: true,
     },
